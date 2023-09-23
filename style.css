@@ -31,9 +31,15 @@ nav {
 }
 
 #title {
-	margin-left: 4rem;
+	margin-left: 3rem;
 }
 
 #contact-text {
-	margin-right: 4rem;
+	margin-right: 3rem;
+}
+
+@media screen and (max-width: 480px) {
+	nav {
+		font-size: 0.5rem;
+	}
 }
