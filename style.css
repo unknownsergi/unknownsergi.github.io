@@ -18,31 +18,53 @@
 } */
 
 body {
-	color: white;
+	color: black;
 	margin: 0px;
 	padding: 0px;
 	font-family: var(--montserrat-alternative);
+	max-width: 100%;
+	height: auto;
 }
 
 nav {
 	height: 5rem;
-	background-color: var(--brown);
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
 }
 
 #contact-text {
 	margin-right: 3rem;
 }
 
+#content-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content-titles {
+	font-size: 1rem;
+}
+
+.content-p {
+	width: 50%;
+	text-align: center;
+}
+
 @media screen and (min-width: 481px) {
+	body {
+		background-image: url(/images/background-1920.jpg);
+	}
 	#title {
 		margin-left: 3rem;
 	}
 }
 
 @media screen and (max-width: 480px) {
+	body {
+		background-image: url(/images/background-640.jpg);
+	}
 	nav {
 		/* font-size: 0.7rem; */
 		justify-content: center;
