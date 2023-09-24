@@ -25,21 +25,30 @@ body {
 }
 
 nav {
+	height: 5rem;
 	background-color: var(--brown);
 	display: flex;
 	justify-content: space-between;
-}
-
-#title {
-	margin-left: 3rem;
+	align-items: center;
 }
 
 #contact-text {
 	margin-right: 3rem;
 }
 
+@media screen and (min-width: 481px) {
+	#title {
+		margin-left: 3rem;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	nav {
-		font-size: 0.5rem;
+		/* font-size: 0.7rem; */
+		justify-content: center;
+	}
+
+	#contact-text {
+		display: none;
 	}
 }
